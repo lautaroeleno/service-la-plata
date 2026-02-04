@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* 1. Definición de fuentes locales */
+@font-face {
+    font-family: 'Google Sans Custom';
+    /* El path es relativo al archivo CSS, por eso subimos un nivel con ../ */
+    src: url('../fonts/GoogleSans-VariableFont_GRAD,opsz,wght.ttf') format('truetype-variations');
+    font-weight: 100 900; /* Rango de pesos que soporta tu fuente variable */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans Custom';
+    src: url('../fonts/GoogleSans-Italic-VariableFont_GRAD,opsz,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@theme {
+    /* Usamos el nombre que definimos en el font-face */
+    --font-google-sans: "Google Sans Custom", sans-serif;
+    --font-sans: var(--font-google-sans);
+}
+
+/* 2. Forzar aplicación global */
+@layer base {
+    html, body {
+        font-family: "Google Sans Custom", sans-serif;
+    }
+}
+
+/* 3. Tus utilidades (sin cambios) */
+@utility boton-whatsapp {
+    @apply inline-block bg-green-600 text-[#fafafa] font-bold py-[5px] px-[10px] rounded-[10px] hover:bg-green-800 transition-all ease-in-out duration-300;
+}
+
+@utility boton-telefono {
+    @apply inline-block bg-sky-600 text-[#fafafa] font-bold py-[5px] px-[10px] rounded-[10px] hover:bg-sky-800 transition-all ease-in-out duration-300;
+}
