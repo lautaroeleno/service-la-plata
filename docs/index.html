@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="img/logo-light.png">
     <link href="css/output.css" rel="stylesheet">
 </head>
-<body class="bg-[#D4D0D0] font-google-sans flex flex-col items-center text-center">
+<body class="bg-[#D4D0D0] font-google-sans flex flex-col items-center text-center gap-4">
     <!--Navbar-->
     <div class="w-full bg-[#fafafa]/70 backdrop-blur-md border border-white/20 fixed py-4 px-[15px] flex lg:justify-between justify-center items-center z-50">
     <div class="hidden lg:block lg:flex items-center space-x-2">
@@ -38,10 +38,10 @@
             </div>
             <p class="ciudad"></p>
         </div>
+        <h2 class="leading-tight text-[20px] font-bold"><span class="contenedor-marca"></span></h2>
+        <h1 class="leading-none text-[50px] xl:text-[90px] font-bold keyword-text"></h1>
         <!--Contenido Fijo-->
-        <h2 class="leading-tight text-[20px] font-bold">Servicio Técnico de Calefones y Termotanques</h2>
-        <h1 class="leading-none text-[60px] xl:text-[90px] font-bold">Servicio Rápido, Confiable y <span class="text-green-600">Garantizado</span></h1>
-        <h3 class="font-bold">Atención en menos de 24 horas. Sin esperas ni complicaciones.</h3>
+        <h3 class="font-bold">Atención en menos de 24 horas.</h3>
         <div class="flex flex-col lg:flex-row gap-4 items-center">
             <!--Botones de WhatsApp y Teléfono Fijo-->
             <a class="boton-telefono w-[75vw] text-[20px] lg:w-[26vw] py-4" href="tel:+1139760440" target="_blank">
@@ -52,7 +52,7 @@
             </a>
         </div>
     </div>
-    <!--Seccion Servicio-->
+    <!--Seccion Nosotros-->
     <div class="w-[95vw] md:w-[85vw] text-[#fafafa] bg-[#0F172A] py-[50px] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
         <!--Contenedor Variable-->
         <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
@@ -62,30 +62,33 @@
                     <span class="relative inline-flex size-3 rounded-full bg-green-500"></span>
                 </span>
             </div>
-            <p class="busqueda"></p>
+            <p>Reparamos tu <span class="equipo-singular"></span> <span class="marca"></span></p>
         </div>
+        <h2 class="leading-tight text-[20px] font-bold">Reparación y mantenimiento de <span class="equipo-plural"></span> <span class="marca"></span></h2>
+        <h1 class="leading-tight text-[50px] xl:text-[90px] font-bold">Especialistas en <span class="equipo-plural"></span> en <span class="ciudad-palabra"></span></h1>
         <!--Contenido Fijo-->
-        <h2 class="leading-tight text-[20px] font-bold">Reparación de calefones y termotanques</h2>
-        <h1 class="leading-tight text-[60px] xl:text-[90px] font-bold">Confianza, Calidad y <span class="text-green-600">Rapidez</span></h1>
-        <p>Nuestro equipo ofrece <span class="font-bold text-green-600">soluciones eficientes y duraderas</span> para la reparación y mantenimiento de calefones y termotanques. Nuestro servicio técnico se adapta a cada necesidad para brindarte el mejor servicio. <span class="font-bold text-green-600">Tenemos amplia experiencia en calefones y termotanques</span> de marcas como Orbis, Volcan, Rheem, Saiar, Longvie, y muchas más.</p>
+        <p>Cubrimos marcas de calefones y termotanques como Orbis, Volcan, Rheem, Saiar, Longvie, Escorial, Universal, Señorial, y muchas otras más.</p>
+        <p class="contenedor-marca"></p>
+        <p>Si detectas que tu equipo <span class="marca"></span> está teniendo un funcionamiento fuera de lo normal, tiene pérdidas o algún otro inconveniente, no dudes en ponerte en contacto con nuestro equipo de especialistas.</p>
+        <p>Te solucionamos tu problema.</p>
         <!--Contenedor Variable-->
         <div></div>
-        <!--Contenido Fijo-->
         <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
-            <p class="bg-[#0F172A]/50 size-[15px] rounded-full"></p>
-            <p>Técnicos especialistas en hogares y comercios</p>
+            <p>Técnicos especialistas en <span class="equipo-plural"></span> <span class="marca"></span></p>
+        </div>
+        <div class="text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
+            <p>Service de calidad en <span class="equipo-plural"></span></p>
         </div>
         <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
-            <p class="bg-[#0F172A]/50 size-[15px] rounded-full"></p>
             <p>Reparaciones garantizadas a precios accesibles</p>
         </div>
         <a class="boton-whatsapp w-[75vw] text-[20px] lg:w-[25vw] py-4" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
-                Quiero reparar mi equipo
+                Quiero reparar mi <span class="equipo-singular"></span>
         </a>
     </div>
-    <!--Seccion Equipo-->
-    <div id="seccion-marcas" class="min-h-dvh w-[95vw] md:w-[85vw] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
-        <!--Contenedor Variable-->
+    <!--Seccion Servicio-->
+    <div class="w-[95vw] md:w-[85vw] text-[#fafafa] bg-[#0F172A] py-[50px] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
+        <!--Contenido Fijo-->
         <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
             <div>
                 <span class="relative flex size-3">
@@ -93,48 +96,40 @@
                     <span class="relative inline-flex size-3 rounded-full bg-green-500"></span>
                 </span>
             </div>
-            <p class="ciudad"></p>
+            <p>Estamos por <span class="ciudad-palabra"></span>, contactanos</p>
         </div>
-        <!--Contenido Fijo-->
-        <h1 class="leading-none text-[60px] xl:text-[90px] font-bold seccion-marca"></h1>
-        <p>Cubrimos marcas de calefones y termontaques como Orbis, Volcan, Saiar, Rheem, Longvie, Escorial y muchas más, pero nos especializamos en equipos <span class="nombre-marca"></span>. Si detectas que tu equipo <span class="nombre-marca"></span> está teniendo un funcionamiento <span class="font-bold">fuera de lo normal, tiene pérdidas u otro inconveniente, no dudes en ponerte en contacto con nosotros.</span></p>
-        <p>Sabemos que puede ser frustrante no entender por qué deja de funcionar un equipo <span class="nombre-marca"></span>, pero en cuanto tengas una situación así, contactanos, <span class="font-bold">nuestro equipo va a realizar una visita para solucionar tu problema lo antes posible.</span></p>
-        <div class="flex flex-col lg:flex-row gap-4 items-center">
-            <a class="boton-telefono w-[75vw] text-[20px] lg:w-[25vw] py-4" href="tel:+1139760440" target="_blank">
-                Llamanos por teléfono
-            </a>
-            <a class="boton-whatsapp w-[75vw] text-[20px] lg:w-[25vw] py-4" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
-                    Consultanos tus dudas
-            </a>
-        </div>
-    </div>
-    <!--Seccion Nosotros-->
-    <div class="w-[95vw] md:w-[85vw] text-[#fafafa] bg-[#0F172A] py-[50px] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
-        <!--Contenido Fijo-->
-        <h1 class="leading-none text-[60px] xl:text-[90px] font-bold">Nuestro servicio</h1>
+        <h2 class="leading-tight text-[20px] font-bold">Nuestro servicio en <span class="equipo-plural"></span></h2>
+        <h1 class="leading-none text-[60px] xl:text-[90px] font-bold">Técnicos en <span class="equipo-plural"></span> <span class="marca"></span></h1>
         <p>Sabemos lo frustrante que es cuando tu rutina se interrumpe porque el calefón no enciende o deja de funcionar. Por eso, <span class="font-bold">si observas que tu equipo no calienta lo suficiente, pierde agua, o notas una falta de presión reiteradas veces,</span> <span class="text-green-600 font-bold">es momento de llamar a nuestro equipo de especialistas.</span></p>
         <p>Estos signos suelen ser indicadores de fallas técnicas que requieren de atención inmediata para evitar daños mayores a futuro. Como técnicos expertos en calefones y termotanques en las principales marcas del mercado, te ofrecemos una solución rápida y segura para que vuelvas a disfrutar del agua caliente en tu hogar o comercio.</p>
+        <p class="leading-none text-[60px] xl:text-[90px] font-bold">Así operamos</p>
+        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4 text-[15px]">
+            <p class="font-bold text-red-600">1. Nos contactas y nos comentas qué problemática presenta tu <span class="equipo-singular"></span> <span class="marca"></span></p>
+        </div>
+        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4 text-[15px]">
+            <p class="font-bold text-yellow-600">2. Pactamos una visita a domicilio, revisamos el <span class="equipo-singular"></span> y hacemos un diagnóstico</p>
+        </div>
+        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4 text-[15px]">
+            <p class="font-bold text-green-600">3. ¡Listo! Te dejamos tu <span class="equipo-singular"></span> funcionando nuevamente</p>
+        </div>
         <a class="boton-whatsapp w-[75vw] text-[20px] lg:w-[25vw] py-4" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
                 Contactanos y te ayudamos
         </a>
-        <h2 class="leading-none text-[60px] xl:text-[90px] font-bold">Así operamos</h2>
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4 text-[15px]">
-            <p class="bg-red-600 text-[#fafafa] size-[25px] rounded-full flex items-center justify-center font-bold">1</p>
-            <p class="font-bold text-red-600">Contactanos y contanos la problemática</p>
-        </div>
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4 text-[15px]">
-            <p class="bg-yellow-600 text-[#fafafa] size-[25px] rounded-full flex items-center justify-center font-bold">2</p>
-            <p class="font-bold text-yellow-600">Hacemos una visita a domicilio y lo revisamos</p>
-        </div>
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4 text-[15px]">
-            <p class="bg-green-600 text-[#fafafa] size-[25px] rounded-full flex items-center justify-center font-bold">3</p>
-            <p class="font-bold text-green-600">Te dejamos tu equipo funcionando nuevamente</p>
-        </div>
     </div>
     <!--Seccion Contacto-->
-    <div class="w-[95vw] md:w-[85vw] py-[50px] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
-        <h1 class="leading-none text-[60px] font-bold">Contactanos</h1>
-        <p><span class="font-bold text-green-600">Ponete en contacto con nosotros,</span> tenemos la solución y nuestros técnicos pueden ayudarte. Te solucionamos tu problema en el día.</p>
+    <div class="w-[95vw] md:w-[85vw] text-[#fafafa] bg-[#0F172A] py-[50px] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
+        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
+            <div>
+                <span class="relative flex size-3">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                    <span class="relative inline-flex size-3 rounded-full bg-green-500"></span>
+                </span>
+            </div>
+            <p>Reparamos tu <span class="equipo-singular"></span> <span class="marca"></span></p>
+        </div>
+        <h2 class="leading-tight text-[20px] font-bold">Mantenimiento de <span class="equipo-plural"></span> <span class="marca"></span></h2>
+        <h1 class="leading-none text-[60px] font-bold">Contactanos y reparamos tu <span class="equipo-singular"></span></h1>
+        <p>Contactanos, tenemos la solución y contamos con el equipo de profesionales adecuado para reparar tu <span class="equipo-singular"></span> <span class="marca"></span>, para que vuelvas a disfrutar de tu <span class="equipo-singular"></span> sin preocupaciones.</p>
         <a class="boton-whatsapp w-[75vw] text-[20px] lg:w-[25vw] py-4" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
                 Escribinos por WhatsApp
         </a>
