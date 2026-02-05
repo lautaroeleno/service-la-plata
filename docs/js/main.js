@@ -100,9 +100,9 @@ fetch('https://ipwho.is/')
         // Título dinámico basado en equipo detectado
         document.querySelectorAll('.titulo-dinamico').forEach(el => {
             if (equipoDetectado) {
-                el.innerHTML = `Service de <span class="font-bold text-green-600">${capitalizarTexto(equipo_plu)}</span>`;
+                el.innerHTML = `Técnico en <span class="font-bold text-green-600">${capitalizarTexto(equipo_plu)}</span>`;
             } else {
-                el.innerHTML = `Service La Plata`;
+                el.innerHTML = `Técnico en Calefones y Termotanques`;
             }
         });
 
