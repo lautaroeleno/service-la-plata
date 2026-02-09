@@ -8,156 +8,117 @@
     <link rel="icon" type="image/png" href="img/logo-light.png">
     <link href="css/output.css" rel="stylesheet">
 </head>
-<body class="bg-[#D4D0D0] font-google-sans flex flex-col items-center text-center gap-4">
-    <!--Navbar-->
-    <div class="w-full bg-[#fafafa]/70 backdrop-blur-md border border-white/20 fixed py-4 px-[15px] flex lg:justify-between justify-center items-center z-50">
-    <div class="hidden lg:block lg:flex items-center space-x-2">
-        <img src="./img/logo-dark.png" height="50" width="50" />
-        <h1 class="text-[20px] titulo-dinamico"></h1>
-    </div>
-    <div class="flex items-center space-x-2">
-        <a class="boton-telefono w-[170px] lg:w-[220px]" href="tel:+1139760440" target="_blank">
-            <span class="lg:hidden block">Teléfono Fijo</span>
-            <span class="hidden lg:block">Llamanos por teléfono</span>
-        </a>
-        <a class="boton-whatsapp w-[170px] lg:w-[220px]" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
-            <span class="lg:hidden block">Nuestro WhatsApp</span>
-            <span class="hidden lg:block">Hablanos por WhatsApp</span>
-        </a>
-    </div>
-</div>
-    <!--Hero Section-->
-    <div class="min-h-dvh w-[95vw] md:w-[85vw] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
-        <!--Contenedor Variable-->
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
-            <div>
-                <span class="relative flex size-3">
-                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-                    <span class="relative inline-flex size-3 rounded-full bg-green-500"></span>
-                </span>
-            </div>
-            <p class="ciudad"></p>
+<body class="bg-[#fafafa] font-google-sans flex flex-col text-center">
+    
+    <!-- nav_bar -->
+    <div class="fixed w-full bg-[#fafafa]/70 backdrop-blur-md border border-white/20 fixed py-4 px-[15px] flex lg:justify-between justify-center items-center z-50">
+        <div class="hidden lg:block lg:flex items-center space-x-2">
+            <img src="./img/logo-dark.png" height="50" width="50" />
+            <p class="text-[20px] mr-12">Técnicos en Calefones y Termotanques La Plata</p>
+            <a class="enlace" href="#inicio">Inicio</a>
+            <a class="enlace" href="#servicio">Nuestro Servicio</a>
+            <a class="enlace" href="#fallas">Fallas Comunes</a>    
         </div>
-        <h2 class="leading-tight text-[20px] font-bold"><span class="contenedor-marca"></span></h2>
-        <h1 class="leading-none text-[50px] xl:text-[90px] font-bold keyword-text"></h1>
-        <!--Contenido Fijo-->
-        <h3 class="font-bold">Atención en menos de 24 horas.</h3>
-        <div class="flex flex-col lg:flex-row gap-4 items-center">
-            <!--Botones de WhatsApp y Teléfono Fijo-->
-            <a class="boton-telefono w-[75vw] text-[20px] lg:w-[26vw] py-4" href="tel:+1139760440" target="_blank">
+        <div class="flex items-center space-x-2">
+            <a class="btn_tel" href="tel:+1139760440" target="_blank">
+                Teléfono Fijo
+            </a>
+            <a class="btn_wsp" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
+                Nuestro WhatsApp
+            </a>
+        </div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank" class="fixed flex items-center justify-center z-10 size-[60px] rounded-full bottom-4 right-4 bg-green-600 border-2 border-green-600/25"><img src="./img/logo-wsp.svg" class="size-[30px]"/></a>
+    <!-- seccion_hero -->
+    <div id="inicio" class="relative min-h-dvh flex justify-center items-center gap-[8vw] md:text-left">
+        <div class="relative flex flex-col md:items-start items-center md:px-0 px-4 gap-[10px] md:w-[25vw]">
+            <div class="nombre_sec">Inicio</div>
+            <div class="zona_cober">Cubrimos <span class="resaltado">La Plata</span> y Alrededores</div>
+            <h1 class="titulos">Servicio Técnico de <span class="resaltado">Calefones y Termotanques</span></h1>
+            <h2 class="font-bold">Técnicos ubicados en La Plata. ¡Contactanos!</h2>
+            <a class="btn_tel" href="tel:+1139760440" target="_blank">
                 Llamanos por teléfono
             </a>
-            <a class="boton-whatsapp w-[75vw] text-[20px] lg:w-[26vw] py-4" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
+            <a class="btn_wsp" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
                 Escribinos por WhatsApp
+            </a>
+            <ul class="list-disc list-inside">
+                <li>Soluciones Garantizadas</li>
+                <li>Técnicos especializados en equipos multimarcas</li>
+                <li>Atención en menos de 24 horas</li>
+            </ul>
+        </div>
+        <div class="hidden md:block">
+            <img src="./img/cocina_1.webp" alt="Reparación de termotanques en La Plata" width="700" height="700" class="rounded-[10px]"/>
+        </div>
+    </div>
+
+    <!-- seccion_nuestro_servicio -->
+    <div id="servicio" class="bg-[#0F172A] text-[#fafafa] relative min-h-dvh flex justify-center items-center gap-[8vw] md:text-left">
+        <div class="hidden md:block">
+            <img src="./img/cocina_2.webp" alt="Service de Calefones en La Plata" width="700" height="700" class="rounded-[10px]"/>
+        </div>
+        <div class="relative flex flex-col md:items-start items-center md:px-0 px-4 gap-[10px] md:w-[25vw]">
+            <div class="nombre_sec">Nuestro Servicio</div>
+            <div class="zona_cober">Contactanos y <span class="resaltado">reparamos tu equipo</span></div>
+            <h2 class="titulos">Reparación de equipos <span class="resaltado">multimarcas</span></h2>
+            <p>En Service La Plata, no solo reparamos equipos; cuidamos el confort de tu hogar. Nacimos para dar respuesta a la creciente demanda de un servicio técnico honesto y profesional en la ciudad. <span class="resaltado">En estos más de 2 años,</span> hemos solucionado cientos de casos en el Casco Urbano, City Bell, Los Hornos, Villa Elisa, Villa Elvira, La Plata, Ensenada, Berisso, Tolosa, entre otros, especializándonos en la complejidad de los calefones modernos y la robustez de los tradicionales. <span class="resaltado">Nuestra prioridad es que no vuelvas a preocuparte por el agua fría,</span> ofreciendo un trato directo, sin intermediarios y con la responsabilidad que nos caracteriza como técnicos platenses. Cubrimos calefones multimarcas como Orbis, Longvie, Volcan, Señorial, Escorial, Rheem, Sherman, Saiar, Emerge, Philco, entre otros.</p>
+            <a class="btn_wsp" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
+                Quiero reparar mi equipo
             </a>
         </div>
     </div>
-    <!--Seccion Nosotros-->
-    <div class="w-[95vw] md:w-[85vw] text-[#fafafa] bg-[#0F172A] py-[50px] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
-        <!--Contenedor Variable-->
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
-            <div>
-                <span class="relative flex size-3">
-                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-                    <span class="relative inline-flex size-3 rounded-full bg-green-500"></span>
-                </span>
-            </div>
-            <p>Reparamos tu <span class="equipo-singular"></span> <span class="marca"></span></p>
+
+    <!-- seccion_fallas_comunes -->
+    <div id="fallas" class="relative min-h-dvh flex justify-center items-center gap-[8vw] md:text-left">
+        <div class="relative flex flex-col md:items-start items-center md:px-0 py-8 px-4 gap-[10px] md:w-[25vw]">
+            <div class="nombre_sec">Fallas comunes</div>
+            <div class="zona_cober">Cubrimos <span class="resaltado">La Plata</span> y Alrededores</div>
+            <h2 class="titulos">Fallas comunes en <span class="resaltado">Calefones y Termotanques</span></h2>
+            <p>En Service La Plata, entendemos la importancia de que tu calefón o termotanque, funcione de forma correcta, tenga su mantenimiento correspondiente, y sea reparado en el momento que sospechas de alguna falla en su funcionamiento. Por eso, <span class="resaltado">si notas que tu equipo puede llegar a presentar alguna de estas fallas,</span> no dudes en ponerte en contacto con nuestro equipo de técnicos en la plata para solucionarlo.</p>
+            <p class="resaltado">Calefones</p>
+            <ul class="list-disc list-inside font-semibolds">
+                <li>Falta de encendido por pilas agotadas</li>
+                <li>Baja o muy baja presión de agua</li>
+                <li>Sensor de llama sucio o defectuoso</li>
+                <li>Sensor de gases activado</li>
+                <li>Diafragma roto o deformado</li>
+                <li>Serpentina tapada</li>
+                <li>Goteo inferior de agua</li>
+                <li>Ruido excesivo del calefón</li>
+                <li>Suciedad del quemador</li>
+            </ul>
+            <p class="resaltado">Termotanques</p>
+            <ul class="list-disc list-inside font-semibolds">
+                <li>Resistencia quemada o termostato averiado</li>
+                <li>Termocupla defectuosa o dañada</li>
+                <li>Termostato de gas roto</li>
+                <li>Fugas de agua en el termotanque o flexibles</li>
+                <li>Ruidos extraños dentro del termotanque</li>
+                <li>Baja presión de agua caliente</li>
+            </ul>
+            <p>Estos son algunos de los problemas que con el tiempo y el uso, puede llegar a presentar tu equipo, ya sea calefón o termotanque. Por eso <span class="resaltado">es importante que te pongas en contacto con un técnico para poder hacerle un service a tu equipo,</span> solucionar los problemas que esté presentando, y poder devolverle un funcionamiento normal, para que puedas disfrutar de tu equipo nuevamente en tu hogar o comercio.</p>
+            <a class="btn_wsp" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">Hablanos por WhatsApp</a>
         </div>
-        <h2 class="leading-tight text-[20px] font-bold">Reparación y mantenimiento de <span class="equipo-plural"></span> <span class="marca"></span></h2>
-        <h1 class="leading-tight text-[50px] xl:text-[90px] font-bold">Especialistas en <span class="equipo-plural"></span> en <span class="ciudad-palabra"></span></h1>
-        <!--Contenido Fijo-->
-        <p>Cubrimos marcas de calefones y termotanques como Orbis, Volcan, Rheem, Saiar, Longvie, Escorial, Universal, Señorial, y muchas otras más.</p>
-        <p class="contenedor-marca"></p>
-        <p>Si detectas que tu equipo <span class="marca"></span> está teniendo un funcionamiento fuera de lo normal, tiene pérdidas o algún otro inconveniente, no dudes en ponerte en contacto con nuestro equipo de especialistas.</p>
-        <p>Te solucionamos tu problema.</p>
-        <!--Contenedor Variable-->
-        <div></div>
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
-            <p>Técnicos especialistas en <span class="equipo-plural"></span> <span class="marca"></span></p>
+        <div class="hidden md:block">
+            <img src="./img/lavadero_1.webp" alt="Técnico de Calefones y Termotanques La Plata" width="500" height="500" class="rounded-[10px]"/>
         </div>
-        <div class="text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
-            <p>Service de calidad en <span class="equipo-plural"></span></p>
-        </div>
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
-            <p>Reparaciones garantizadas a precios accesibles</p>
-        </div>
-        <a class="boton-whatsapp w-[75vw] text-[20px] lg:w-[25vw] py-4" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
-                Quiero reparar mi <span class="equipo-singular"></span>
-        </a>
     </div>
-    <!--Seccion Servicio-->
-    <div class="w-[95vw] md:w-[85vw] text-[#fafafa] bg-[#0F172A] py-[50px] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
-        <!--Contenido Fijo-->
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
-            <div>
-                <span class="relative flex size-3">
-                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-                    <span class="relative inline-flex size-3 rounded-full bg-green-500"></span>
-                </span>
+
+    <!-- seccion_contactanos -->
+    <div class="bg-[#0F172A] text-[#fafafa] relative min-h-[50vh] flex flex-col justify-between items-start p-[60px] gap-[8vw]">
+        <div class="text-left flex flex-col gap-4">
+            <div class="flex items-center gap-4">
+                <img src="./img/logo-light.png" class="md:size-[50px] size-[25px]" />
+                <p class="md:text-[20px] text-left">Técnicos en Calefones y Termotanques La Plata</p>
             </div>
-            <p>Estamos por <span class="ciudad-palabra"></span>, contactanos</p>
+            <p>Técnicos ubicados en La Plata.</p>
+            <p>Horarios de atención: Lunes a Viernes de 09:00 hs a 19:00 hs - Sábados de 09:00 hs a 15:00 hs.</p>
         </div>
-        <h2 class="leading-tight text-[20px] font-bold">Nuestro servicio en <span class="equipo-plural"></span></h2>
-        <h1 class="leading-none text-[50px] xl:text-[90px] font-bold">Técnicos en <span class="equipo-plural"></span> <span class="marca"></span></h1>
-        <p>Sabemos lo frustrante que es cuando tu rutina se interrumpe porque el calefón no enciende o deja de funcionar. Por eso, <span class="font-bold">si observas que tu equipo no calienta lo suficiente, pierde agua, o notas una falta de presión reiteradas veces,</span> <span class="text-green-600 font-bold">es momento de llamar a nuestro equipo de especialistas.</span></p>
-        <p>Estos signos suelen ser indicadores de fallas técnicas que requieren de atención inmediata para evitar daños mayores a futuro. Como técnicos expertos en calefones y termotanques en las principales marcas del mercado, te ofrecemos una solución rápida y segura para que vuelvas a disfrutar del agua caliente en tu hogar o comercio.</p>
-        <p class="leading-none text-[60px] xl:text-[90px] font-bold">Así operamos</p>
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4 text-[15px]">
-            <p class="font-bold text-red-600">1. Nos contactas y nos comentas qué problemática presenta tu <span class="equipo-singular"></span> <span class="marca"></span></p>
-        </div>
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4 text-[15px]">
-            <p class="font-bold text-yellow-600">2. Pactamos una visita a domicilio, revisamos el <span class="equipo-singular"></span> y hacemos un diagnóstico</p>
-        </div>
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4 text-[15px]">
-            <p class="font-bold text-green-600">3. ¡Listo! Te dejamos tu <span class="equipo-singular"></span> funcionando nuevamente</p>
-        </div>
-        <a class="boton-whatsapp w-[75vw] text-[20px] lg:w-[25vw] py-4" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
-                Contactanos y te ayudamos
-        </a>
-    </div>
-    <!--Seccion Contacto-->
-    <div class="w-[95vw] md:w-[85vw] text-[#fafafa] bg-[#0F172A] py-[50px] flex flex-col items-center justify-center px-[25px] xl:px-[15vw] space-y-[20px] text-center rounded-[30px]">
-        <div class="flex items-center space-x-[15px] text-[#0F172A] bg-[#fafafa] rounded-[10px] py-2 px-4">
-            <div>
-                <span class="relative flex size-3">
-                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-                    <span class="relative inline-flex size-3 rounded-full bg-green-500"></span>
-                </span>
-            </div>
-            <p>Reparamos tu <span class="equipo-singular"></span> <span class="marca"></span></p>
-        </div>
-        <h2 class="leading-tight text-[20px] font-bold">Mantenimiento de <span class="equipo-plural"></span> <span class="marca"></span></h2>
-        <h1 class="leading-none text-[50px] font-bold">Contactanos y reparamos tu <span class="equipo-singular"></span></h1>
-        <p>Contactanos, tenemos la solución y contamos con el equipo de profesionales adecuado para reparar tu <span class="equipo-singular"></span> <span class="marca"></span>, para que vuelvas a disfrutar de tu <span class="equipo-singular"></span> sin preocupaciones.</p>
-        <a class="boton-whatsapp w-[75vw] text-[20px] lg:w-[25vw] py-4" href="https://api.whatsapp.com/send?phone=5492212018970" target="_blank">
-                Escribinos por WhatsApp
-        </a>
         <div>
-            <p class="font-bold">Nuestros horarios de atención:</p>
-            <p>Lunes a Viernes - De 09:00 hs a 19:00 hs</p>
-            <p>Sábados - De 09:00 hs a 15:00 hs</p>
-        </div>
-        <h3 class="leading-none text-[50px] font-bold">Marcas que trabajamos</h3>
-        <!--GRID con todas las marcas-->
-        <div class="flex flex-wrap justify-center gap-4">
-            <div class="border-2 rounded-[10px] px-4 py-2 cursor-pointer hover:font-bold hover:text-sky-600 transition-all">ORBIS</div>
-            <div class="border-2 rounded-[10px] px-4 py-2 cursor-pointer hover:font-bold hover:text-sky-600 transition-all">VOLCAN</div>
-            <div class="border-2 rounded-[10px] px-4 py-2 cursor-pointer hover:font-bold hover:text-sky-600 transition-all">RHEEM</div>
-            <div class="border-2 rounded-[10px] px-4 py-2 cursor-pointer hover:font-bold hover:text-sky-600 transition-all">SAIAR</div>
-            <div class="border-2 rounded-[10px] px-4 py-2 cursor-pointer hover:font-bold hover:text-sky-600 transition-all">LONGVIE</div>
-            <div class="border-2 rounded-[10px] px-4 py-2 cursor-pointer hover:font-bold hover:text-sky-600 transition-all">UNIVERSAL</div>
-            <div class="border-2 rounded-[10px] px-4 py-2 cursor-pointer hover:font-bold hover:text-sky-600 transition-all">SEÑORIAL</div>
+            <p>&copy; 2026 Service La Plata.</p>
         </div>
     </div>
-    <div class="w-[95vw] md:w-[85vw] h-[50vh] font-bold text-[#fafafa] bg-[#0F172A] py-[50px] flex flex-col justify-between text-left px-[25px] space-y-[20px] text-center rounded-[30px]">
-        <div class="flex space-x-2 items-center">
-            <img src="./img/logo-light.png" height="50" width="50" />
-            <p class="text-[20px]">Service La Plata - Todos los derechos reservados</p>
-        </div>
-        <p class="text-[20px]">&copy; 2026 Service La Plata</p>
-    </div>
-    <!--Footer-->
     <script src="js/main.js" defer></script>
 </body>
 </html>

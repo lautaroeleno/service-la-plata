@@ -30,10 +30,27 @@
 }
 
 /* 3. Tus utilidades (sin cambios) */
-@utility boton-whatsapp {
-    @apply inline-block bg-green-600 text-[#fafafa] font-bold py-[5px] px-[10px] rounded-[10px] hover:bg-green-800 transition-all ease-in-out duration-300;
+@utility btn_wsp {
+    @apply w-fit inline-block bg-green-600 border-2 border-green-400/25 text-[#fafafa] font-bold py-[5px] px-[10px] rounded-[5px] hover:bg-green-800 transition-all ease-in-out duration-300;
+} @utility btn_tel {
+    @apply w-fit inline-block bg-sky-600 border-2 border-sky-400/25 text-[#fafafa] font-bold py-[5px] px-[10px] rounded-[5px] hover:bg-sky-800 transition-all ease-in-out duration-300;
 }
 
-@utility boton-telefono {
-    @apply inline-block bg-sky-600 text-[#fafafa] font-bold py-[5px] px-[10px] rounded-[10px] hover:bg-sky-800 transition-all ease-in-out duration-300;
+@utility nombre_sec {
+    @apply bg-[#239BFE]/50 text-[#239BFE] px-6 py-2 rounded-[10px] border-2 border-[#239BFE]/25 font-bold;
+}
+@utility zona_cober {
+    @apply bg-[#fafafa] text-[#0F172A] px-6 py-2 rounded-[10px] border-2 border-green-600/25 font-bold;
+}
+
+@utility titulos {
+    @apply md:text-[60px] text-[55px] font-bold leading-none;
+}
+
+@utility enlace {
+    @apply font-semibold text-[#0F172A] hover:bg-[#0f172a]/25 px-6 border-[#0f172a]/25 border-2 rounded-[10px] cursor-pointer;
+}
+
+@utility resaltado {
+    @apply text-green-600 font-bold;
 }
